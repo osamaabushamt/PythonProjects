@@ -31,7 +31,7 @@ while game_is_on:
 
     #Ball touched the Y axis
     if ball.ycor() > 280 or ball.ycor() < -280:
-        ball.bounce()
+        ball.bounce(ball)
 
     #Ball made collision with Paddle
     if ball.distance(l_paddle) <30 or ball.distance(r_paddle) < 30:
